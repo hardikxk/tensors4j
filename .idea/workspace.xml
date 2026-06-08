@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55063f79-0375-4810-9e47-695774546147" name="Changes" comment="add maven repo to build.gradle">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/io/tensors4j/Tensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/io/tensors4j/Tensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/io/tensors4j/VectorOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/io/tensors4j/VectorOps.java" afterDir="false" />
+    <list default="true" id="55063f79-0375-4810-9e47-695774546147" name="Changes" comment="fix build">
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,61 +83,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000050188362" />
-      <entry key="MS500" value="1.0232501269887218" />
-      <entry key="S2" value="2.239376825532771" />
-      <entry key="S5" value="5.523661465370282" />
-      <entry key="S10" value="8.446807577408354" />
-      <entry key="S30" value="11.704387373685657" />
-      <entry key="S60" value="12.974103602608016" />
-      <entry key="M2" value="15.175863509838274" />
-      <entry key="M5" value="22.929104943005832" />
-      <entry key="M10" value="38.62962276653115" />
-      <entry key="M15" value="52.639829789087436" />
-      <entry key="M30" value="78.45485863731264" />
-      <entry key="H1" value="99.11699718150035" />
-      <entry key="H2" value="112.33549433059416" />
-      <entry key="H4" value="119.83321387073731" />
-      <entry key="D1" value="126.58972615901197" />
-      <entry key="W1" value="127.7972921376542" />
+      <entry key="MS100" value="1.0012885863132839" />
+      <entry key="MS500" value="1.289389960254791" />
+      <entry key="S2" value="2.7750848734268527" />
+      <entry key="S5" value="4.512787624267201" />
+      <entry key="S10" value="5.556483310545027" />
+      <entry key="S30" value="6.465293880464747" />
+      <entry key="S60" value="6.725345813879123" />
+      <entry key="M2" value="6.893054102236009" />
+      <entry key="M5" value="8.901029209722086" />
+      <entry key="M10" value="18.25793264384273" />
+      <entry key="M15" value="30.158529593253892" />
+      <entry key="M30" value="59.04940307774344" />
+      <entry key="H1" value="87.73465898793545" />
+      <entry key="H2" value="108.38542233883985" />
+      <entry key="H4" value="120.84317904070875" />
+      <entry key="D1" value="132.51245695918504" />
+      <entry key="W1" value="134.64135933812327" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="7.925682702289168E-76" />
-      <entry key="MS500" value="9.545690219208164E-16" />
-      <entry key="S2" value="1.7577286602962476E-4" />
-      <entry key="S5" value="0.03147608675387722" />
-      <entry key="S10" value="0.1774150127635122" />
-      <entry key="S30" value="0.5619057232674038" />
-      <entry key="S60" value="0.7496037273543725" />
-      <entry key="M2" value="0.8659769518263314" />
-      <entry key="M5" value="0.9933541757533865" />
-      <entry key="M10" value="1.3172560116825667" />
-      <entry key="M15" value="1.6663405786014656" />
-      <entry key="M30" value="2.393773772471084" />
-      <entry key="H1" value="3.0346186833568205" />
-      <entry key="H2" value="3.467159471943425" />
-      <entry key="H4" value="3.7195759762917837" />
-      <entry key="D1" value="3.951178120258797" />
-      <entry key="W1" value="3.992972463316918" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="8.548288840328288E-165" />
+      <entry key="S5" value="2.3591289240249411E-66" />
+      <entry key="S10" value="1.5359456123264713E-33" />
+      <entry key="S30" value="1.1537860379256804E-11" />
+      <entry key="S60" value="3.396742687989111E-6" />
+      <entry key="M2" value="0.0018434093638895284" />
+      <entry key="M5" value="0.08479110677288948" />
+      <entry key="M10" value="0.3848515858252134" />
+      <entry key="M15" value="0.7336898277023841" />
+      <entry key="M30" value="1.5883911842746368" />
+      <entry key="H1" value="2.4719592615054933" />
+      <entry key="H2" value="3.129265473640417" />
+      <entry key="H4" value="3.533684158191396" />
+      <entry key="D1" value="3.9175600071470265" />
+      <entry key="W1" value="3.988101284031494" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.341900235287584E-9" />
-      <entry key="MS500" value="0.02439933292879376" />
-      <entry key="S2" value="1.4115006845046858" />
-      <entry key="S5" value="5.040307934710964" />
-      <entry key="S10" value="8.304056514924204" />
-      <entry key="S30" value="12.131825967083127" />
-      <entry key="S60" value="13.650938835926112" />
-      <entry key="M2" value="16.003632595371307" />
-      <entry key="M5" value="23.906069715569114" />
-      <entry key="M10" value="39.936767072891385" />
-      <entry key="M15" value="54.297731393494146" />
-      <entry key="M30" value="80.84237746751302" />
-      <entry key="H1" value="102.14750797381332" />
-      <entry key="H2" value="115.80025508180573" />
-      <entry key="H4" value="123.55148792310516" />
-      <entry key="D1" value="130.54067142790058" />
-      <entry key="W1" value="131.79023092512654" />
+      <entry key="MS100" value="0.006655276222119009" />
+      <entry key="MS500" value="0.63950210967925" />
+      <entry key="S2" value="2.5423180046888296" />
+      <entry key="S5" value="4.411182775814609" />
+      <entry key="S10" value="5.504007661323329" />
+      <entry key="S30" value="6.44739544168847" />
+      <entry key="S60" value="6.716346274547704" />
+      <entry key="M2" value="6.890301318315108" />
+      <entry key="M5" value="8.982612118187525" />
+      <entry key="M10" value="18.638924816051773" />
+      <entry key="M15" value="30.887900176763864" />
+      <entry key="M30" value="60.63334194538242" />
+      <entry key="H1" value="90.20312108030733" />
+      <entry key="H2" value="111.51244738824136" />
+      <entry key="H4" value="124.37558860367086" />
+      <entry key="D1" value="136.42977980650682" />
+      <entry key="W1" value="138.629426088869" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -281,7 +278,7 @@
       <option name="presentableId" value="Default" />
       <updated>1780898886932</updated>
       <workItem from="1780898888777" duration="3145000" />
-      <workItem from="1780912991151" duration="2738000" />
+      <workItem from="1780912991151" duration="3178000" />
     </task>
     <task id="LOCAL-00001" summary="automate maven publishing">
       <option name="closed" value="true" />
@@ -299,13 +296,22 @@
       <option name="project" value="LOCAL" />
       <updated>1780914890126</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix build">
+      <option name="closed" value="true" />
+      <created>1780915958273</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1780915958273</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="automate maven publishing" />
     <MESSAGE value="add maven repo to build.gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="add maven repo to build.gradle" />
+    <MESSAGE value="fix build" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
