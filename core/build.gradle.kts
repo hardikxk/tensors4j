@@ -7,6 +7,10 @@ plugins {
     signing
 }
 
+repositories{
+    mavenCentral()
+}
+
 tasks.test {
     useJUnitPlatform()
 }
