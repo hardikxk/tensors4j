@@ -66,7 +66,7 @@ public class Tensor implements AutoCloseable {
     }
 
     /**
-     * Allocating subtraction. Returns a new Tensor where each element if the difference of the corresponding elements of {@code this} and {@code other both tensors must have the same shape.
+     * Allocating subtraction. Returns a new Tensor where each element if the difference of the corresponding elements of {@code this} and {@code other} both tensors must have the same shape.
      */
     public Tensor sub(Tensor other) {
         Arena outArena = Arena.ofConfined();

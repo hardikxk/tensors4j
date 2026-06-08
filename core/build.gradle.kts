@@ -1,4 +1,4 @@
-group = "io.github.hardikxk "
+group = "io.github.hardikxk"
 version = project.findProperty("VERSION_NAME") ?: "0.7.0-SNAPSHOT"
 
 plugins {
@@ -13,6 +13,12 @@ repositories{
 
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.withType<Javadoc>().configureEach {
+    val standardOptions = options as StandardJavadocDocletOptions
+    standardOptions.addBooleanOption("Xdoclint:none", true)
+    standardOptions.addStringOption("-add-modules", "jdk.incubator.vector")
 }
 
 tasks.withType<JavaCompile>().configureEach {

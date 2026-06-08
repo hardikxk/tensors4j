@@ -313,8 +313,6 @@ public final class VectorOps {
 
     /**
      * a[i] = max(0, a[i])
-     *
-     * @return
      */
     public static void reluInPlace(NDArray a) {
         checkUnary(a);

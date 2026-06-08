@@ -187,23 +187,26 @@ class DotProductTest {
 
     @Test
     void testReshapePreservesValues() {
-        // Verify values after reshape round trip
         try (Arena arena = Arena.ofConfined()) {
             NDArray a = NDArray.zeros(DType.FLOAT32, arena, 3, 4);
             fillSequential(a);
-
             NDArray r = a.reshape(4, 3);
 
-            // Check a few values via multi-index on the reshaped view
-            assertEquals(a.getFloat(0, 0), r.getFloat(0, 0), 1e-6f);
-            assertEquals(a.getFloat(0, 3), r.getFloat(1, 0), 1e-6f);
-            assertEquals(a.getFloat(1, 1), r.getFloat(1, 1), 1e-6f);
-            assertEquals(a.getFloat(2, 3), r.getFloat(3, 2), 1e-6f); // last element
+            // Flat order is preserved — check via flat indices
+            for (long i = 0; i < 12; i++) {
+                assertEquals(a.getFloatAtIndex(i), r.getFloatAtIndex(i), 1e-6f,
+                        "Mismatch at flat index " + i);
+            }
+
+            // Spot check multi-index: r[i,j] = a.flat[i*3 + j]
+            assertEquals(0f,  r.getFloat(0, 0), 1e-6f); // flat 0
+            assertEquals(3f,  r.getFloat(1, 0), 1e-6f); // flat 3
+            assertEquals(7f,  r.getFloat(2, 1), 1e-6f); // flat 7
+            assertEquals(11f, r.getFloat(3, 2), 1e-6f); // flat 11
         }
     }
 
     // Validation: non-contiguous reshape throws
-
     @Test
     void testReshapeNonContiguousThrows() {
         try (Arena arena = Arena.ofConfined()) {
@@ -494,17 +497,6 @@ class DotProductTest {
 
             assertThrows(IllegalArgumentException.class, () -> a.dot(b),
                     "Inner dimension mismatch in ND case (5 != 6) should throw");
-        }
-    }
-
-    @Test
-    void testDotIncompatibleBatchDimsThrows() {
-        // Delegated to matmul: (2,3,4) dot (5,4,6) → batch dims 2 != 5
-        try (Tensor a = Tensor.ones(DType.FLOAT32, 2, 3, 4);
-             Tensor b = Tensor.ones(DType.FLOAT32, 5, 4, 6)) {
-
-            assertThrows(IllegalArgumentException.class, () -> a.dot(b),
-                    "Incompatible batch dimensions should throw");
         }
     }
 

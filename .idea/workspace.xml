@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55063f79-0375-4810-9e47-695774546147" name="Changes" comment="automate maven publishing" />
+    <list default="true" id="55063f79-0375-4810-9e47-695774546147" name="Changes" comment="add maven repo to build.gradle">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/io/tensors4j/Tensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/io/tensors4j/Tensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/io/tensors4j/VectorOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/io/tensors4j/VectorOps.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +19,44 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tensors4j" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tensors4j" type="f1a62948:ProjectNode" />
+                <item name="core" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tensors4j" type="f1a62948:ProjectNode" />
+                <item name="core" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tensors4j" type="f1a62948:ProjectNode" />
+                <item name="core" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,61 +86,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0429513722053154" />
-      <entry key="MS500" value="2.152594880414048" />
-      <entry key="S2" value="4.401813587985629" />
-      <entry key="S5" value="7.095500300972984" />
-      <entry key="S10" value="9.5298255193231" />
-      <entry key="S30" value="12.718957792564186" />
-      <entry key="S60" value="14.107770224802193" />
-      <entry key="M2" value="15.381856801660554" />
-      <entry key="M5" value="21.642121053229566" />
-      <entry key="M10" value="38.003393222564966" />
-      <entry key="M15" value="51.53072014030051" />
-      <entry key="M30" value="74.40087825813713" />
-      <entry key="H1" value="91.44128007310532" />
-      <entry key="H2" value="101.92152594389803" />
-      <entry key="H4" value="107.74524276875066" />
-      <entry key="D1" value="112.92616025923358" />
-      <entry key="W1" value="113.84580616166737" />
+      <entry key="MS100" value="1.0000000050188362" />
+      <entry key="MS500" value="1.0232501269887218" />
+      <entry key="S2" value="2.239376825532771" />
+      <entry key="S5" value="5.523661465370282" />
+      <entry key="S10" value="8.446807577408354" />
+      <entry key="S30" value="11.704387373685657" />
+      <entry key="S60" value="12.974103602608016" />
+      <entry key="M2" value="15.175863509838274" />
+      <entry key="M5" value="22.929104943005832" />
+      <entry key="M10" value="38.62962276653115" />
+      <entry key="M15" value="52.639829789087436" />
+      <entry key="M30" value="78.45485863731264" />
+      <entry key="H1" value="99.11699718150035" />
+      <entry key="H2" value="112.33549433059416" />
+      <entry key="H4" value="119.83321387073731" />
+      <entry key="D1" value="126.58972615901197" />
+      <entry key="W1" value="127.7972921376542" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="2.2560040202983716E-184" />
-      <entry key="S5" value="3.4840654181828226E-74" />
-      <entry key="S10" value="1.9425070127603078E-37" />
-      <entry key="S30" value="7.692732964027225E-13" />
-      <entry key="S60" value="1.200770777823886E-6" />
-      <entry key="M2" value="0.001536905889152526" />
-      <entry key="M5" value="0.11631062753927826" />
-      <entry key="M10" value="0.5305789646419744" />
-      <entry key="M15" value="0.9119863603065046" />
-      <entry key="M30" value="1.6187975446709435" />
-      <entry key="H1" value="2.190384261991657" />
-      <entry key="H2" value="2.5593348015865978" />
-      <entry key="H4" value="2.769789182607396" />
-      <entry key="D1" value="2.960173657419582" />
-      <entry key="W1" value="2.9942736381377575" />
+      <entry key="MS100" value="7.925682702289168E-76" />
+      <entry key="MS500" value="9.545690219208164E-16" />
+      <entry key="S2" value="1.7577286602962476E-4" />
+      <entry key="S5" value="0.03147608675387722" />
+      <entry key="S10" value="0.1774150127635122" />
+      <entry key="S30" value="0.5619057232674038" />
+      <entry key="S60" value="0.7496037273543725" />
+      <entry key="M2" value="0.8659769518263314" />
+      <entry key="M5" value="0.9933541757533865" />
+      <entry key="M10" value="1.3172560116825667" />
+      <entry key="M15" value="1.6663405786014656" />
+      <entry key="M30" value="2.393773772471084" />
+      <entry key="H1" value="3.0346186833568205" />
+      <entry key="H2" value="3.467159471943425" />
+      <entry key="H4" value="3.7195759762917837" />
+      <entry key="D1" value="3.951178120258797" />
+      <entry key="W1" value="3.992972463316918" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.984884221712984" />
-      <entry key="MS500" value="2.0451456699101582" />
-      <entry key="S2" value="4.345940993833236" />
-      <entry key="S5" value="7.066053766716121" />
-      <entry key="S10" value="9.512077987763243" />
-      <entry key="S30" value="12.711767411566678" />
-      <entry key="S60" value="14.103924758416932" />
-      <entry key="M2" value="15.381348255206667" />
-      <entry key="M5" value="21.756594416501724" />
-      <entry key="M10" value="38.53054429863059" />
-      <entry key="M15" value="52.43848831151581" />
-      <entry key="M30" value="76.01550912052751" />
-      <entry key="H1" value="93.62867385303917" />
-      <entry key="H2" value="104.47906119291028" />
-      <entry key="H4" value="110.51404382054739" />
-      <entry key="D1" value="115.88615576744621" />
-      <entry key="W1" value="116.84005400366004" />
+      <entry key="MS100" value="5.341900235287584E-9" />
+      <entry key="MS500" value="0.02439933292879376" />
+      <entry key="S2" value="1.4115006845046858" />
+      <entry key="S5" value="5.040307934710964" />
+      <entry key="S10" value="8.304056514924204" />
+      <entry key="S30" value="12.131825967083127" />
+      <entry key="S60" value="13.650938835926112" />
+      <entry key="M2" value="16.003632595371307" />
+      <entry key="M5" value="23.906069715569114" />
+      <entry key="M10" value="39.936767072891385" />
+      <entry key="M15" value="54.297731393494146" />
+      <entry key="M30" value="80.84237746751302" />
+      <entry key="H1" value="102.14750797381332" />
+      <entry key="H2" value="115.80025508180573" />
+      <entry key="H4" value="123.55148792310516" />
+      <entry key="D1" value="130.54067142790058" />
+      <entry key="W1" value="131.79023092512654" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -111,6 +154,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.tensors4j [:benchmarks:build].executor": "Run",
+    "Gradle.tensors4j [:core:build].executor": "Run",
+    "Gradle.tensors4j [:core:clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -127,7 +173,82 @@
       <recent name="C:\Users\hardi\Documents\o\tensors4j\benchmarks\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.tensors4j [:core:build]">
+    <configuration name="tensors4j [:benchmarks:build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":benchmarks:build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="tensors4j [:core:build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":core:build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="tensors4j [:core:clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":core:clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,6 +258,13 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.tensors4j [:core:build]" />
+        <item itemvalue="Gradle.tensors4j [:core:clean]" />
+        <item itemvalue="Gradle.tensors4j [:benchmarks:build]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -153,7 +281,7 @@
       <option name="presentableId" value="Default" />
       <updated>1780898886932</updated>
       <workItem from="1780898888777" duration="3145000" />
-      <workItem from="1780912991151" duration="1823000" />
+      <workItem from="1780912991151" duration="2738000" />
     </task>
     <task id="LOCAL-00001" summary="automate maven publishing">
       <option name="closed" value="true" />
@@ -163,12 +291,21 @@
       <option name="project" value="LOCAL" />
       <updated>1780914580870</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add maven repo to build.gradle">
+      <option name="closed" value="true" />
+      <created>1780914890126</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1780914890126</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="automate maven publishing" />
-    <option name="LAST_COMMIT_MESSAGE" value="automate maven publishing" />
+    <MESSAGE value="add maven repo to build.gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="add maven repo to build.gradle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
