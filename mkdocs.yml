@@ -1,0 +1,13 @@
+site_name: Nadar
+site_description: High-performance Java Tensor Library
+site_url: https://sargunai.github.io/Nadar/
+theme:
+  name: material
+  palette:
+    scheme: slate
+
+
+nav:
+  - Home: index.md
+  - quickstart: quickstart.md
+  - demo: demo.md
