@@ -1,5 +1,7 @@
 # Tensors4J
 
+![TRIAC](TRIAC.jpeg) 
+
 ## The Aim for this project
 **Tensors4J** is aimed to provide a high dimensional numerical and tensor operations SIMD library for researchers and enterprises alike for Java (similar to PyTorch, TensorFlow, Jax, etc. for Python).
 
